@@ -40,7 +40,7 @@ int main() {
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &numero_de_pontos_turisticos);
     printf("\n");
-
+    
     // Exibir os dados cadastrados
     printf("Os dados foram cadastrados com sucesso, aqui está a carta com os respectivos dados:\n\n");
 
@@ -52,7 +52,7 @@ int main() {
     printf("Área em km²: %.2f\n", area);
     printf("PIB: %.2f\n", pib);
     printf("Número de pontos turísticos: %d\n\n", numero_de_pontos_turisticos);
-    
+
 
     // Finaliza o programa
     return 0;

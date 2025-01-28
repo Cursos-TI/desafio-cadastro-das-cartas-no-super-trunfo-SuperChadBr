@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main() {
     
     //Exibir mensagem de boas-vindas e introduzir o jogo

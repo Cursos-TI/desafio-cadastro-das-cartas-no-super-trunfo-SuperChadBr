@@ -14,7 +14,9 @@ int main() {
     char nome_da_cidade[23];
     int populacao;
     float area;
+    float densidade_populacional;
     float pib;
+    float pib_per_capita;
     int numero_de_pontos_turisticos;
 
     
@@ -40,6 +42,11 @@ int main() {
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &numero_de_pontos_turisticos);
     printf("\n");
+
+    // Calculando a densidade populacional e o PIB per capita após a entrada dos dados
+    densidade_populacional = populacao / area;
+    pib_per_capita = pib / populacao;
+
     
     // Exibir os dados cadastrados
     printf("Os dados foram cadastrados com sucesso, aqui está a carta com os respectivos dados:\n\n");
@@ -49,10 +56,10 @@ int main() {
     printf("Código da Carta: %s\n", codigo_da_carta);
     printf("Nome da Cidade: %s\n", nome_da_cidade);
     printf("População: %d\n", populacao);
-    printf("Área em km²: %.2f\n", area);
+    printf("Densidade Populacional: %.2f\n", densidade_populacional);
     printf("PIB: %.2f\n", pib);
+    printf("PIB per Capita: %.2f\n", pib_per_capita);
     printf("Número de pontos turísticos: %d\n\n", numero_de_pontos_turisticos);
-
 
     // Finaliza o programa
     return 0;

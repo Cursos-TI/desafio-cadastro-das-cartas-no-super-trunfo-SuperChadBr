@@ -59,6 +59,7 @@ int main() {
     printf("Código da Carta: %s\n", codigo_da_carta1);
     printf("Nome da Cidade: %s\n", nome_da_cidade1);
     printf("População: %lu\n", populacao1);
+    printf("Area em Km²: %.2f\n", area1);
     printf("Densidade Populacional: %.2f\n", densidade_populacional1);
     printf("PIB: %.2f\n", pib1);
     printf("PIB per Capita: %.2f\n", pib_per_capita1);
@@ -114,6 +115,7 @@ int main() {
     printf("Código da Carta: %s\n", codigo_da_carta2);
     printf("Nome da Cidade: %s\n", nome_da_cidade2);
     printf("População: %d\n", populacao2);
+    printf("Area em Km²: %.2f\n", area2);
     printf("Densidade Populacional: %.2f\n", densidade_populacional2);
     printf("PIB: %.2f\n", pib2);
     printf("PIB per Capita: %.2f\n", pib_per_capita2);
@@ -125,6 +127,7 @@ int main() {
 
     // Comparar os dados cadastrados
     printf("População: %d\n", populacao1 >= populacao2);
+    printf("Area em Km²: %d\n", area1 >= area2);
     printf("Densidade Populacional: %d\n", densidade_populacional1 <= densidade_populacional2);
     printf("PIB: %d\n", pib1 >= pib2);
     printf("PIB per Capita: %d\n", pib_per_capita1 >= pib_per_capita2);

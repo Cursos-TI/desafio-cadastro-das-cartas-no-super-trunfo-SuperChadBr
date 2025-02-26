@@ -5,8 +5,10 @@ int main() {
     //Exibir mensagem de boas-vindas e introduzir o jogo
     printf("Bem vindo ao Super Trunfo!\n");
     printf("Para começar, você irá cadastrar duas cartas, com os dados que o sistema pedir\n");
-    printf("Depois, o sistema irá comparar os dados das duas cartas, e a carta que tiver mais atributos melhores que a outra, será a carta vencedora\n");
-    printf("Agora cadastre os dados da primeira carta, que será reresentada pelo número 1 nas comparações\n\n");
+    printf("Depois, o sistema irá comparar os dados das duas cartas\n");
+    printf("Se a informação que determinada carta venceu naquele atributo for seguida de 1, a informação é verdadeira, se 0 a informação é falsa\n"); 
+    printf("A carta que tiver mais atributos melhores que a outra, será a carta vencedora\n");
+    printf("Agora cadastre os dados da primeira carta: \n\n");
 
 
     //Declaração das variáveis
@@ -67,7 +69,7 @@ int main() {
     printf("O Super Poder é de: %.2f\n\n", super_poder1);
 
 
-    printf("Agora cadastre os dados da segunda carta, que será reresentada pelo número 0 nas comparações\n\n");
+    printf("Agora cadastre os dados da segunda carta:\n\n");
 
     char estado2;
     char codigo_da_carta2[4];
@@ -126,13 +128,20 @@ int main() {
     printf("E com isso, temos abaixo, a carta vencedora de cada atributo, a carta com mais atrubutos melhores que a outra é a carta vencedora\n\n");
 
     // Comparar os dados cadastrados
-    printf("População: %d\n", populacao1 >= populacao2);
-    printf("Area em Km²: %d\n", area1 >= area2);
-    printf("Densidade Populacional: %d\n", densidade_populacional1 <= densidade_populacional2);
-    printf("PIB: %d\n", pib1 >= pib2);
-    printf("PIB per Capita: %d\n", pib_per_capita1 >= pib_per_capita2);
-    printf("Pontos turísticos: %d\n", numero_de_pontos_turisticos1 >= numero_de_pontos_turisticos2);
-    printf("Super Poder: %d\n\n", super_poder1 >= super_poder2);
+    printf("População: Carta 1 venceu (%d)\n", populacao1 >= populacao2);
+    printf("População: Carta 2 venceu (%d)\n\n", populacao2 >= populacao1);
+    printf("Area em Km²: Carta 1 venceu (%d)\n", area1 >= area2);
+    printf("Area em Km²: Carta 2 venceu (%d)\n\n", area2 >= area1);
+    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade_populacional1 <= densidade_populacional2);
+    printf("Densidade Populacional: Carta 2 venceu (%d)\n\n", densidade_populacional2 <= densidade_populacional1);
+    printf("PIB: Carta 1 venceu (%d)\n", pib1 >= pib2);
+    printf("PIB: Carta 2 venceu (%d)\n\n", pib2 >= pib1);
+    printf("PIB per Capita: Carta 1 venceu (%d)\n", pib_per_capita1 >= pib_per_capita2);
+    printf("PIB per Capita: Carta 2 venceu (%d)\n\n", pib_per_capita2 >= pib_per_capita1);
+    printf("Pontos turísticos: Carta 1 venceu (%d)\n", numero_de_pontos_turisticos1 >= numero_de_pontos_turisticos2);
+    printf("Pontos turísticos: Carta 2 venceu (%d)\n\n", numero_de_pontos_turisticos2 >= numero_de_pontos_turisticos1);
+    printf("Super Poder: Carta 1 venceu (%d)\n", super_poder1 >= super_poder2);
+    printf("Super Poder: Carta 2 venceu (%d)\n\n", super_poder2 >= super_poder1);
 
 
     // Finaliza o programa
